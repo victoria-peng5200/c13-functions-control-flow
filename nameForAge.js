@@ -7,4 +7,9 @@ function nameForAge(age) {
     if (age > 40) return 'almost grown up'
 }
 
-console.log('Name for age 7 is', nameForAge(7))
+addInputToPage('Age', 7)
+addButtonToPage('Get name for age', () => {
+    const age = getInputAsNumber('Age')
+    const ageName = nameForAge(age)
+    addTextToPage('Name for age ' + age + ' is ' + ageName)
+})
