@@ -26,7 +26,7 @@ function getInputAsNumber(label) {
 }
 
 function getInputAsBoolean(label) {
-    return getInput(label).toLowerCase === 'true'
+    return getInput(label).toLowerCase() === 'true'
 }
 
 function addTextToPage(text) {
