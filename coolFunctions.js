@@ -36,3 +36,7 @@ function addTextToPage(text) {
     body.append(newParagraph)
 }
 
+function clearPage() {
+    const body = document.getElementsByTagName('body')[0]
+    body.replaceChildren('')
+}

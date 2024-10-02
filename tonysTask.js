@@ -40,7 +40,7 @@ function techFlowChart2(doesItMove, shouldItMove) {
     }
 }
 
-
+clearPage()
 addInputToPage("Does it move", "true")
 addInputToPage("Should it move", "true")
 addButtonToPage("Fix it!", () => {
