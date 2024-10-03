@@ -26,7 +26,12 @@ function getInputAsNumber(label) {
 }
 
 function getInputAsBoolean(label) {
-    return getInput(label).toLowerCase === 'true'
+<<<<<<< HEAD
+    let inputValue = getInput(label).toLowerCase();
+    return inputValue === 'true'
+=======
+    return getInput(label).toLowerCase() === 'true'
+>>>>>>> f70229f48d4ad0b10feec01c4df7932d04039dfc
 }
 
 function addTextToPage(text) {
@@ -36,3 +41,7 @@ function addTextToPage(text) {
     body.append(newParagraph)
 }
 
+function clearPage() {
+    const body = document.getElementsByTagName('body')[0]
+    body.replaceChildren('')
+}
